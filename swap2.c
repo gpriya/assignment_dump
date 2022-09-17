@@ -1,14 +1,14 @@
-// Write a program to swap values of two int variables
+// Write a program to swap values of two int variables without using a third variable.
 #include <stdio.h>
 int main()
 {
-    int m, n, temp;
+    int m, n;
     printf("Enter 2 digits: ");
     scanf("%d %d", &m, &n);
     printf("Before m = %d, n = %d\n", m, n);
-    temp = m;
-    m = n;
-    n = temp;
+    m = m + n;
+    n = m - n;
+    m = m - n;
     printf("After swap m = %d, n = %d\n", m, n);
 
     return 0;
