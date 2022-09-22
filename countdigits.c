@@ -4,14 +4,13 @@ int main()
 {
     int count, i;
     long long int n;
+    
     printf("Enter a number: ");
     scanf("%lld", &n);
-    count = 0;
-    while (n)
-    {
+
+    for (i = 0; n != 0; i++)
         n = n / 10;
-        ++count;
-    }
-    printf("Digits = %d\n", count);
+
+    printf("Digits = %d\n", i);
     return 0;
 }
