@@ -4,16 +4,8 @@
 int main()
 {
     int i = 19, count = 0;
-    do 
-    {
-        if (i % 2 != 0)
-        {
-            printf("%d ", i);
-            count++;
-        }
-            
-        i--;
-
-    }while(count< 10);
+    for (i = 10; i>= 1; i--)
+        printf("%d ", 2*i - 1);
+    printf("\n");
     return 0;
 }
