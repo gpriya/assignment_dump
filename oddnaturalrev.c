@@ -2,29 +2,11 @@
 #include <stdio.h>
 int main()
 {
-    int n, i = 1, count;
+    int n, i;
     printf("Enter a number: ");
     scanf("%d", &n);
-    count = n;
-    // first loop to get the nth odd number, to print from reverse
-    do
-    {
-        if (i % 2 != 0)
-            --count;
-        ++i;
-
-    } while(count);
-
-    count = n;
-    do
-    {
-        if(i % 2 != 0)
-        {
-            printf("%d ", i);
-            --count;
-        }
-        --i; 
-    } while (count); 
-    
+    for (i = n; i >= 1; i--)
+        printf("%d ", 2 * i - 1);
+    printf("\n");
     return 0;
 }

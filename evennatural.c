@@ -2,21 +2,11 @@
 #include <stdio.h>
 int main()
 {
-    int n, i = 1;
+    int n, i;
     printf("Enter a number: ");
     scanf("%d", &n);
-
-    do
-    {
-        if (i % 2 == 0)
-        {
-            printf("%d ", i);
-            --n;
-        }
-            
-        ++i;
-
-    } while(n);
-
+    for (i = 1; i <= n; i++)
+        printf("%d ", 2*i);
+    printf("\n");
     return 0;
 }
