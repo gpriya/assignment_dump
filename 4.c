@@ -3,16 +3,8 @@
 int main()
 {
     int i = 1, count = 0;
-    do 
-    {
-        if (i % 2 != 0)
-        {
-            printf("%d ", i);
-            count++;
-        }
-            
-        i++;
+    for (i = 1; i <= 10; i++)
+        printf("%d \n", 2*i -1);
 
-    }while(count< 10);
     return 0;
 }
